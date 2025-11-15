@@ -1,10 +1,10 @@
-# 🚗 Microservicios con Spring Boot - App tipo Uber
+#  Microservicios con Spring Boot - App tipo Uber
 
 > **Explicación didáctica y ejecutiva**: Aprende cómo está implementada una arquitectura de microservicios en Java/Spring Boot de forma MUY sencilla.
 
 ---
 
-## 📚 ¿Qué encontrarás aquí?
+## ¿Qué encontrarás aquí?
 
 Este proyecto muestra **CÓMO** se implementa una arquitectura de microservicios usando **Spring Boot** y **Arquitectura Hexagonal**, con un ejemplo práctico: una app tipo Uber.
 
@@ -12,14 +12,14 @@ Este proyecto muestra **CÓMO** se implementa una arquitectura de microservicios
 
 ---
 
-## 🎯 Explicación para principiantes (13 años)
+## Explicación para principiantes (13 años)
 
 ### ¿Qué problema resolvemos?
 
 Imagina que quieres hacer una app como Uber. Si haces TODO en un solo programa gigante:
-- 📉 Si una parte falla, **toda la app se cae**
-- 🐌 Es difícil de entender y modificar
-- 👥 Muchos programadores trabajando en el mismo archivo = **caos**
+- Si una parte falla, **toda la app se cae**
+- Es difícil de entender y modificar
+- Muchos programadores trabajando en el mismo archivo = **caos**
 
 ### La solución: Microservicios
 
@@ -50,7 +50,7 @@ En lugar de 1 programa gigante, hacemos **4 programas pequeños** (microservicio
 
 ---
 
-## 🏗️ Arquitectura Hexagonal (Puertos y Adaptadores)
+## Arquitectura Hexagonal (Puertos y Adaptadores)
 
 Cada microservicio está organizado en **3 capas** como una cebolla:
 
@@ -88,7 +88,7 @@ Cada microservicio está organizado en **3 capas** como una cebolla:
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Experiencia003/
@@ -121,7 +121,7 @@ Experiencia003/
 
 ---
 
-## 💡 Cómo funciona - Explicación paso a paso
+## Cómo funciona - Explicación paso a paso
 
 ### Ejemplo: Un pasajero solicita un viaje
 
@@ -167,7 +167,7 @@ Experiencia003/
 
 ---
 
-## 🔍 Código explicado - User Service
+## Código explicado - User Service
 
 Veamos cómo está implementado el User Service:
 
@@ -180,7 +180,7 @@ public class User {
     private UserType userType;  // PASSENGER o DRIVER
     private double rating;
 
-    // 📌 LÓGICA DE NEGOCIO (sin dependencias externas)
+    // LÓGICA DE NEGOCIO (sin dependencias externas)
     public boolean canDrive() {
         return this.userType == UserType.DRIVER
                && this.rating >= 3.0;
@@ -271,7 +271,7 @@ public class UserRepositoryAdapter implements UserRepository {
 
 ---
 
-## 🌍 Empresas que usan Microservicios
+## Empresas que usan Microservicios
 
 ### Grandes empresas
 
@@ -298,21 +298,21 @@ public class UserRepositoryAdapter implements UserRepository {
 
 ### Stack principal
 
-- ☕ **Java 17** - Lenguaje de programación
-- 🍃 **Spring Boot 3.2** - Framework para crear apps
-- 🗄️ **Spring Data JPA** - Para guardar en base de datos
-- 💾 **H2 Database** - Base de datos en memoria (para aprender)
-- 🏗️ **Maven** - Gestiona dependencias
+-  **Java 17** - Lenguaje de programación
+-  **Spring Boot 3.2** - Framework para crear apps
+-  **Spring Data JPA** - Para guardar en base de datos
+-  **H2 Database** - Base de datos en memoria (para aprender)
+-  **Maven** - Gestiona dependencias
 
 ### Arquitectura
 
-- 🔷 **Microservicios** - Servicios independientes
-- 🔶 **Arquitectura Hexagonal** - Puertos y adaptadores
-- 🔀 **REST APIs** - Comunicación entre servicios
+-  **Microservicios** - Servicios independientes
+-  **Arquitectura Hexagonal** - Puertos y adaptadores
+-  **REST APIs** - Comunicación entre servicios
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 
 ### Requisitos previos
 
@@ -345,7 +345,7 @@ mvn spring-boot:run
 
 ---
 
-## 📝 Ejemplos de uso (con curl o Postman)
+## Ejemplos de uso (con curl o Postman)
 
 ### 1. Registrar un pasajero
 
@@ -411,7 +411,7 @@ curl -X PUT "http://localhost:8082/api/rides/1/complete?fare=25.50"
 
 ---
 
-## 🎓 Conceptos clave aprendidos
+##  Conceptos clave aprendidos
 
 ### Microservicios
 
@@ -437,7 +437,7 @@ curl -X PUT "http://localhost:8082/api/rides/1/complete?fare=25.50"
 
 ---
 
-## 🔄 Diagrama de flujo completo
+##  Diagrama de flujo completo
 
 ```
 ┌─────────────┐
@@ -491,9 +491,9 @@ curl -X PUT "http://localhost:8082/api/rides/1/complete?fare=25.50"
 
 ---
 
-## 📊 Ventajas vs Desventajas
+##  Ventajas vs Desventajas
 
-### ✅ Ventajas
+### Ventajas
 
 - **Escalabilidad**: Crece solo lo que necesitas (ejemplo: Black Friday solo escala el servicio de pagos)
 - **Independencia**: Cada equipo trabaja en su servicio sin molestar a los demás
@@ -510,7 +510,7 @@ curl -X PUT "http://localhost:8082/api/rides/1/complete?fare=25.50"
 
 ---
 
-## 🎯 Para empresas pequeñas
+##  Para empresas pequeñas
 
 ### ¿Cuándo usar microservicios?
 
@@ -533,7 +533,7 @@ curl -X PUT "http://localhost:8082/api/rides/1/complete?fare=25.50"
 
 ---
 
-## 🧪 Para entender mejor
+##  Para entender mejor
 
 ### Analogía: Restaurante
 
@@ -561,7 +561,7 @@ Equipo especializado:
 
 ---
 
-## 🛠️ Próximos pasos
+##  Próximos pasos
 
 Para mejorar este proyecto:
 
@@ -576,25 +576,13 @@ Para mejorar este proyecto:
 
 ---
 
-## 📚 Recursos adicionales
+##  Recursos adicionales
 
 - [Spring Boot Docs](https://spring.io/projects/spring-boot)
 - [Arquitectura Hexagonal explicada](https://alistair.cockburn.us/hexagonal-architecture/)
 - [Microservices Patterns - Chris Richardson](https://microservices.io/)
 - [Spring Cloud](https://spring.io/projects/spring-cloud) - Para microservicios avanzados
 
----
 
-## 👨‍💻 Autor
-
-Este proyecto fue creado con fines educativos para enseñar arquitectura de microservicios de forma práctica y sencilla.
-
----
-
-## 📄 Licencia
-
-Este proyecto es de código abierto y está disponible para aprendizaje.
-
----
 
 **¿Preguntas?** Revisa el código, cada archivo tiene comentarios explicando qué hace. ¡Aprende haciendo!
