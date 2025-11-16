@@ -1,6 +1,6 @@
 #  Microservicios con Spring Boot - App tipo Uber
 
-> **Explicación didáctica y ejecutiva**: Aprende cómo está implementada una arquitectura de microservicios en Java/Spring Boot de forma MUY sencilla.
+>  Aprende cómo está implementada una arquitectura de microservicios en Java/Spring Boot de forma MUY sencilla.
 
 ---
 
