@@ -3,7 +3,7 @@
 >  Aprende cómo está implementada una arquitectura de microservicios en Java/Spring Boot de forma MUY sencilla.
 
 ---
-> ¿Como vamos a trabajar?
+> Learn By Doing.
 
 --- 
 
