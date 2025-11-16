@@ -11,7 +11,7 @@
 
 Este proyecto muestra **CÓMO** se implementa una arquitectura de microservicios usando **Spring Boot** y **Arquitectura Hexagonal**, con un ejemplo práctico: una app tipo Uber.
 
-**NO** te explicaremos la teoría de qué son los microservicios (eso está en mil lugares), sino **CÓMO está construido el código** para que lo entiendas de forma práctica.
+**NO** explicaré la teoría de qué son los microservicios (eso está en mil lugares), sino **CÓMO está construido el código** para que lo entiendas de forma práctica.
 
 ---
 
